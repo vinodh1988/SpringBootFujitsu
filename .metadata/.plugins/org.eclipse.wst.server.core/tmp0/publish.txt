@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Sep 27 14:50:42 IST 2019
+org.eclipse.jst.jee.server\:/binary\:D\:\\SpringCourse\\spring-framework-4.1.6.RELEASE\\libs\\spring-web-4.1.6.RELEASE.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\SpringCourse\\spring-framework-4.1.6.RELEASE\\libs\\spring-web-4.1.6.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE-sources.jar

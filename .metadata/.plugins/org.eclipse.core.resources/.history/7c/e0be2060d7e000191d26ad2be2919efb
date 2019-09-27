@@ -1,0 +1,9 @@
+package com.firstapp.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.firstapp.model.Emp;
+
+public class EmpDAO extends CrudRepository<Emp,Long>{
+
+}

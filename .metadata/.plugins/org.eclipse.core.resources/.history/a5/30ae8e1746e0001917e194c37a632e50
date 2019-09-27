@@ -1,0 +1,23 @@
+package com.firstapp.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.firstapp.dao.PersonDAO;
+import com.firstapp.model.Person;
+
+@Service
+public class PersonService implements InitializingBean{
+
+	@Autowired
+	   PersonDAO pdao;
+	
+	
+	
+	public List<Person> getPeople(){
+		return (List<Person>) pdao.findAll();
+	}
+}

@@ -1,0 +1,16 @@
+package com.firstapp.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.firstapp.dao.EmpDAO;
+import com.firstapp.model.Emp;
+
+@Service
+public class EmpService {
+	@Autowired
+	  EmpDAO edao;
+  public void add(Emp emp) {
+	  edao.save(emp);
+  }
+}

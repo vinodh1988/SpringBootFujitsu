@@ -1,0 +1,17 @@
+package com.firstapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackages = {"com.firstapp.*"})
+@EntityScan("com.firstapp.model")
+public class FirstappApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FirstappApplication.class, args);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.firstapp.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.firstapp.model.Emp;
+
+public interface EmpDAO extends CrudRepository<Emp,Long>{
+   public Person findByDno(int dno);
+}

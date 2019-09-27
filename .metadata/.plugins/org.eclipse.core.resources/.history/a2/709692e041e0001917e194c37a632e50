@@ -1,0 +1,23 @@
+package com.firstapp.rest;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.firstapp.service.FirstService;
+
+@RestController
+@RequestMapping("/rest-api")
+public class EndPoints {
+@Autowired	
+FirstService fs;
+	@RequestMapping("/greet")
+	public String greet() {
+		return "Spring boot is working";
+	}
+	
+	@RequestMapping("/people")
+	public String[] people() {
+		
+	}
+
+}
